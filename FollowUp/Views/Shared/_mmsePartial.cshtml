@@ -1,0 +1,305 @@
+﻿@{
+    ViewBag.Title = "mmse.html";
+}
+@{
+    var items = new SelectList(new[]
+        { 
+           new SelectListItem {Text = "无", Value = "无"},
+            new SelectListItem {Text = "曾患", Value = "曾患"},
+            new SelectListItem {Text = "现患", Value = "现患"},
+        }, "Text", "Value");
+}
+@{
+    var scores = new SelectList(new[]
+    {
+    new SelectListItem { Text="", Value=""},
+    new SelectListItem { Text="0", Value="0"},
+    new SelectListItem { Text="1", Value="1"},
+    new SelectListItem { Text="2", Value="2"},
+    }, "Text", "Value");
+}
+@{
+    var actions = new SelectList(new[]
+        {
+        new SelectListItem { Text="4", Value="独立完成"},
+        new SelectListItem { Text="3", Value="有些困难"},
+        new SelectListItem { Text="2", Value="需要帮助"},
+        new SelectListItem { Text="1", Value="无法完成"},
+        new SelectListItem { Text="0", Value="不知道/不适用"},
+        }, "Text", "Value");
+}
+    <link href="@Url.Content("~/Content/question_menu.css")" rel="stylesheet" type="text/css" />
+  @* 认知检查*@
+   <div  id="diagnosis" >
+     <div id="querybox">
+          <div class="menubox">
+
+                          <ul class="qeslist"id="mtl0">
+                            <li>
+                                <p class="parttitle">
+                                   5、MoCA--连线</p>
+                            </li>
+                            <li>
+                                <div class="guideline">
+                                    <a>指导语：</a>
+                                    <p>
+                                        “我们有时会用‘123......’或者汉语的‘甲乙丙......’来表示顺序”。请您按照从数字到汉字并逐步升高的顺序画一条连线。从这里开始【指向数字（1）】，从1连向甲，再连向2，并一直下去，到这里结束【指向汉字（戊）】。</p>
+                                </div>
+                                <div class="photo"><img src="../../Content/images/彩色连线.png" alt="连线"/></div>
+                                <div class="grade">
+                                  
+                                    <p><span>评分：</span>当患者完全按照“1-甲-2-乙-3-丙-4-丁-5-戊”的顺序进行连线且没有任何交叉线时给1分。当患者出现任何错误且没有立即自我纠正时，给0分。</p>  
+                                </div>
+                                  <div class="gradebox">
+                                        <a>连线<span><input id="mt1" type="checkbox" name="" /></span></a></div>
+                            </li>
+                          
+                        </ul>
+                        <ul class="qeslist"id="mtl1">
+                            <li>
+                                <p class="parttitle" >
+                                     6、MoCA--复制立方体</p>
+                            </li>
+                            <li>
+                                <div class="guideline">
+                                    <a>指导语：</a>
+                                    <p>
+                                       （检查者指着立方体）“请您按照这幅图下面的空白处在画一遍，并尽可能精确”。</p>
+                                </div>
+                                <div class="grade">
+                                    <p>
+                                        <span>评分：</span>完全符合下列标准时，给1分：</p>
+                                    <ul style="list-style-type: decimal">
+                                        <li>图形为三维结构</li>
+                                        <li>所有的线都存在</li>
+                                        <li>无多余的线</li>
+                                        <li>相对的边基本平行，长度基本一致（长方体或者棱柱体也算对）</li>
+                                    </ul>
+                                    <p>
+                                        上述标准中，只要违反其中任何一条，即为0分。</p>                              
+                                </div>
+                                <div class="photo">
+                                <img src="../../Content/images/立方体彩色.png" alt="立方体"/>
+                                </div>
+                                <div class="gradebox">
+                                   
+                                        <a>复制立方体<span><input id="mt2"type="checkbox" name="" /></span></a></div>
+                            </li>
+                            
+                        </ul>
+                        <ul class="qeslist" id="mtl2">
+                            <li>
+                                <p class="parttitle">
+                                    7、MoCA--画钟表</p>
+                            </li><li class="lasttime_score">上一次得分：<label id="lastScore_ml2" ></label></li>
+                            <li>
+                                <div class="guideline">
+                                    <a>指导语：</a>
+                                    <p>
+                                        “请您在此处话一个钟表，填上所有的数字并指示出11点10分”。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grade">
+                                    <p>
+                                       <span>评分：</span>符合下列三个标准时，分别给1分：</p>
+                                    <ul style="list-style-type: decimal">
+                                        <li>轮廓：表面必须是个圆，允许有轻微的缺陷（如，圆没有闭合）。</li>
+                                        <li>数字：所有的数字必须完整且没无多余的数字；数字顺序必须正确且在所属的象限内；可以是罗马数字；数字可以放在圆圈之外。</li>
+                                        <li>指针：必须要有两个指针且一起指向正确的时间；时针必须明显短于分针；指针的中心必须在表内且接近于钟表的中心。</li>
+                                    </ul>
+                                    <div class="gradebox">
+                                        <ul>
+                                            <li><span>轮廓</span><input type="checkbox" name="clock" /></li><li><span>数字</span><input
+                                                type="checkbox" name="clock" /></li><li><span>指针</span><input type="checkbox" name="clock" /></li></ul>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <ul class="qeslist" id="mtl3">
+                            <li>
+                                <p class="parttitle">
+                                    8、MoCA--命名</p>
+                            </li>
+                            <li>
+                                <div class="guideline">
+                                    <a>指导语：</a>
+                                    <p>
+                                        自左向右指着图片问患者：“请您告诉我这个动物的名字”。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grade">
+                                    <p>
+                                        <span>评分：</span>每答对一个给1分。正确的回答是：（1）狮子；（2）犀牛（3）骆驼或者单峰骆驼。</p>
+                                        <img src="../../Content/images/命名.png" alt="命名"/>
+                                    <div class="gradebox">
+                                        <ul>
+                                            <li><span>狮子</span><input type="checkbox" name="animal" /></li><li><span>犀牛</span><input
+                                                type="checkbox" name="animal" /></li><li><span>骆驼或者单峰骆驼</span><input type="checkbox" name="animal" /></li></ul>
+                                    </div>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                       
+                        <ul class="qeslist" id="VocabularyLearning">
+                               <li> <p class="parttitle">
+                                    2、词表学习</p></li>
+
+                             <li><a class="guide">指导语：</a></li>
+                            <li>
+                                <p class="question">
+                                    检查者以每秒钟1个的速度读出下面这些词，全部读完后要求患者说出记住的词组内容，以记住的词组正确数计分，共重复3次。2分钟后再次要求患者回忆并说出所记住的词组内容。</p>
+                            </li>
+                            @*<li><p onclick="test()" >hzz</p> </li>*@
+                            <li id="time1">
+                                <table  >
+                                    <tr>
+                                    <th></th>
+                                        <th>
+                                            面孔
+                                        </th>
+                                        <th>
+                                            天鹅绒
+                                        </th>
+                                        <th>
+                                            教堂
+                                        </th>
+                                        <th>
+                                            菊花
+                                        </th>
+                                        <th>
+                                            天气
+                                        </th>
+                                        <th>
+                                            红色
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                       <td>第一次</td>
+                                        <td>
+                                            <input type="checkbox" name="time1" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="time1" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="time1" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="time1" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="time1" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="time1" />
+                                        </td>
+                                    </tr>
+                                      <tr>
+                                        <td>
+                                           第二次
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="" />
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="" />
+                                        </td>
+                                    </tr>
+                                    </li>
+                                    </ul>
+                
+                    <ul class="qeslist" id="mtl4">
+                            <li>
+                                <p class="parttitle">
+                                    9、MoCA--注意1</p>
+                            </li> 
+                            <li>
+                                <div class="guideline">
+                                    <a>（一）数字顺背广度 指导语：</a>
+                                    <p>
+                                        “下面我说一些数字，您仔细听，当我说完事您就跟着照样背出来”。按照每秒钟1个的速度读出这5个数字。</p>
+                                    <a>（二）数字倒背广度 指导语：</a>
+                                    <p>
+                                        “下面我再说一些数字，您仔细听，但是当我说完时您必须按照袁术倒着背出来”。按照每秒钟1个数字的速度读出这3个数字。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grade">
+                                    <p>
+                                        <span>评分：</span>复述正确，每一个数列分别给一分（注：倒背的正确回答是2-4-7）。</p>
+                                    <div class="gradebox">
+                                        <ul>
+                                            <li><span>顺背：21854</span><input type="checkbox" name="columns" /></li><li><span>倒背：742</span><input
+                                                type="checkbox" name="columns" /></li></ul>
+                                    </div>
+                                </div>
+                                
+                            </li> 
+                           
+                        </ul>
+                        <ul class="qeslist" id="mtl5">
+                            <li>
+                                <p class="parttitle">
+                                     10、MoCA--注意2</p>
+                            </li>
+                            <li>
+                                <div class="guideline">
+                                    <a>指导语：</a>
+                                    <p>
+                                        检查者以每秒1个的速度读出数字串，并向患者说明：“下面我要读出一系列数字，请注意听。每当我读到1的时候，您就拍一下手。当我读到其他数字时不要拍手”。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grade">
+                                    <p>
+                                        <span>评分：</span>如果完全正确或者只有一次错误则给1分，否则不给分。（错误是指当读到1时没有拍手，或者读到其他数字时拍手）</p>
+                                    <div class="gradebox">
+                                      <p><span>  5213 9411 8062 1519 4511 1905 112</span><input id="mt6" type="checkbox" name="" /></p></div>
+                                </div>
+
+                            </li>
+                            
+                        </ul>
+                        <ul class="qeslist" id="mtl6">
+                            <li>
+                                <p class="parttitle">
+                                    11、MoCA--注意3</p>
+                            </li>
+                            <li>
+                                <div class="guideline">
+                                    <a>指导语：</a>
+                                    <p>
+                                        “现在请您做一道计算题，从100中减去一个7，而后从得数中再减去一个7，一直减下去，直到我让您停下为止”。如果需要可以再向患者讲一遍。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grade">
+                                    <p>
+                                       <span>评分：</span> 本条目总分3分。全部记错记0分，一个正确给1分，2-3个正确给2分，4-5个正确给3分。从100开始计算正确的减数，每个减数都单独评定，也就是说，如果患者减错了一次，而从这一个减数开始后续的减7都正确，则后续的正确减数都要给分。例如，如果患者给出的回答是93-85-78-71-64，只有85是错误的，而其他结果的正确，因此给3分。</p>
+                                    <div class="gradebox" id="calculate">
+                                        <ul>
+                                        <li>1分<input id="calculate1" type="checkbox" class="calculation" /></li>
+                                        <li>2分<input id="calculate2" type="checkbox"  class="calculation" /></li>
+                                        <li>3分<input id="calculate3" type="checkbox" class="calculation" /></li>
+                                        </ul>
+                                   </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+        </div>
+        </div>
+        </div>

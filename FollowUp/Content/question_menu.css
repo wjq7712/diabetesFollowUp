@@ -1,0 +1,338 @@
+/*更多资源：www.unn114.com*/
+@charset "utf-8";
+
+/*body,ul,li{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	float:left;
+}*/
+/*img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}*/
+#mainmenu {
+	height: 610px;
+	width: 790px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	/*background-color: #C1E4E1;*/
+	background-color:transparent;
+	margin-top: 0;
+}
+#diagnosis .pre{
+	background-image: url(images/nav.png);
+	background-repeat: no-repeat;
+	background-position: -50px top;
+	display: block;
+	height: 47px;
+	width: 25px;
+	cursor:pointer;
+	position: absolute;
+	left: -60px;
+	top: 1115px;
+}
+#diagnosis a.pre:hover{
+	background-position: -75px top;
+	}
+#diagnosis .next{
+	background-image: url(images/nav.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 47px;
+	width: 25px;
+	cursor:pointer;
+	top: 1115px;
+	right: -60px;
+	position: absolute;
+	}
+#diagnosis a.next:hover{
+	background-position: -25px top;
+	}
+#diagnosis #querybox {
+	height: 568px;
+	width: 790px;
+	position: relative;
+	/*background-image:url(images/bg2.png);*/
+}
+
+#diagnosis .menubox{ 
+	left: 0px;
+	top: -19px;
+}
+#diagnosis .menubox ul {
+	float: left;
+	display: block;
+	width: 750px;
+}
+#diagnosis .menubox li {
+	font-size: 0px;
+	line-height: 23px;
+	position: relative;
+	margin-left:8px;
+	margin-right:23px;
+}
+#diagnosis .nav {
+	height: 10px;
+	margin-top: 0px;
+	width:627px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#diagnosis .nav a {
+	background:rgba(100, 100, 100, 0.7);
+	display: block;
+	float: left;
+	height: 10px;
+	width: 50px;
+	font-size: 0px;
+	line-height: 0px;
+	margin-right: 2px;
+	cursor:pointer;
+}
+#diagnosis .nav a:hover{
+	background-color: #F9B766;
+}
+#diagnosis .nav .now{
+	background-color: #F9B766;
+}
+
+  
+.score span
+{
+    display:block;
+    margin-left:104px;
+    line-height:38px;
+    font-family:"微软雅黑";
+    }
+      
+#mainmenu .menubox .score
+{
+        border:1px solid;
+        border-color:White;
+        width:450px;
+        height:130px;
+        padding-top:19px;
+        margin-left:108px;
+        margin-top:62px;
+    }
+        
+/*input[type="checkbox"]
+{
+  width:20px;
+  height:23px;
+  float:right;
+  margin-right:104px;
+  zoom:109%;
+    }*/
+    
+ .info ul{list-style:none; margin:2px 2px 0 0;padding:0 8px 0 0px;}
+ .info li{ float:left; padding:2px 16px 0 0; }
+ .info select{ width:90px;}
+ select
+{
+    font-size: 14px;
+    margin: 0 0 0 2px; 
+    border: 1px solid #98C2E2;
+    background-color: White;
+}
+ .parttitle
+{
+    font-size:20px;
+    font-family:"楷体"
+    }
+  .question {text-indent:2em; font-family:"微软雅黑"}
+  a.guide{font-family:"微软雅黑";font-size:18px;}
+  
+ /*病人自述*/
+ #basicinfor{ height:266px;width:790px;margin-top :0px;display:block;}
+ #basicinfor div.Readme{margin:7px 0 0 28px}
+  #basicinfor div.Readme textarea{font-family:"微软雅黑";}
+ #basicinfor div.patinfo{height:87px; margin:10px 0 0 28px;}
+ #basicinfor div.patinfo ul li{float:left; width:210px; list-style:none;margin-top:-7px; padding-bottom:9px;font-family:"微软雅黑";}
+ #basicinfor div.patinfo ul li.long{width:210px; }
+ #basicinfor a{ display:block; font-family:"微软雅黑";}
+ 
+.b1,.b2,.b3,.b4,.b1b,.b2b,.b3b,.b4b,.b{display:block;overflow:hidden;}
+.b1,.b2,.b3,.b1b,.b2b,.b3b{height:1px;}
+.b2,.b3,.b4,.b2b,.b3b,.b4b,.b{border-left:1px solid #32549C;border-right:1px solid #32549C;}
+.b1,.b1b{margin:0 5px;background:#32549C;}
+.b2,.b2b{margin:0 3px;border-width:2px;}
+.b3,.b3b{margin:0 2px;}
+.b4,.b4b{height:2px;margin:0 1px;}
+.d1{background: transparent;}
+.k {height:260px; margin-left:auto;}/*决定了圆角矩形的高度*/
+.stitle{ background:rgb(209, 209, 211); font-size:16px;text-align:left;  margin-left:4px;}
+input[type="text"]
+{
+  width:120px;
+  height:23px;
+  margin:10px 28px 5px 7px;
+  padding:0 5px 0 5px;
+    }
+.info
+ {
+       margin-left:50px;
+     }
+     
+ .info ul li{ float:left; padding:3px 20px 0 0; }
+ .info select{ width:60px;}
+ 
+ /*继发筛查*/
+ #secondary div.k {height:325px; margin-left:auto;}
+ #secondary div.k li{list-style:none;float:left;width:310px; margin-bottom:15px;}
+  #secondary div.k li.cols1{list-style:none;float:left;width:400px;}
+   #secondary div.k input[type="text"]{ width:60px; height:23px; margin:2px 5px 0px 0px;padding:0 5px 0 5px;}
+   #secondary div.k li span{width:162px;font-family:"微软雅黑"; display:inline-block;}
+  #secondary div.k li.cols1 span{width:252px;font-family:"微软雅黑"; display:inline-block;}
+  #secondary_screening{ margin:-49px 69px 0 594px; height: 37px;
+	float: left;
+	width :138px;
+    background: url(images/normal-button.png) no-repeat ;
+    text-align:center;
+    border:0;}
+  #secondary_screening:hover{background: url(images/hover-button.png) no-repeat ;}
+  #secondary_screening:active{background: url(images/click-button.png) no-repeat ;}
+  #secondary textarea{  width:692px;margin-left:40px;border:0;background:transparent; font-family:"微软雅黑"; color:Red;}
+   #secondary div.k input[type="checkbox"]{zoom:105%;float:left;margin-right:6px;}
+   #secondary div.k li.course span{width:310px;}
+   #secondary div.k li.course{width:375px;}
+   #secondary div.k li p{color:Red;
+text-align:center;
+font-size: 14px;
+padding-top:7px;}
+ /*认知检查的量表诊断*/
+ #diagnosis {width:790px;display:block;margin-top: 37px;margin-left: 10%;}
+ #diagnosis div.k {height:632px; margin-left:auto;}/*决定了圆角矩形的高度*/
+ 
+ 
+     /*词表学习部分*/
+  #VocabularyLearning li {line-height: 23px;}
+ .tips{ float:left; font-size:14px; width:700px;font-family:"微软雅黑"}
+  p.tips span{ float:right;font-size:14px; font-family:"微软雅黑"} 
+  #VocabularyLearning table{ border-collapse: collapse; width:700px;}
+  #VocabularyLearning table, th ,td{ border:1px solid white; text-align:center; font-size:14px;height:18px; line-height:20px;font-family:"微软雅黑"}
+  #VocabularyLearning table input[type="checkbox"] { width:20px; height:23px; float:right; margin: 2px 25px 3px 4px; zoom:105%;}
+  #VocabularyLearning li.worddisplay{ line-height:6px;}/*将每个table的说明文字占高度缩小*/
+  #VocabularyLearning a.guide{font-size:16px;}
+  #VocabularyLearning p.question{font-size:14px;margin-top:0px;}
+  #VocabularyLearning p.parttitle{margin-bottom:1px;}
+  
+  /*图形记忆*/
+  #PhotographicMemory_1 div.grade li{ font-size: 16px;line-height: 18px;position: relative;margin-left:78px;margin-right:23px;font-family:"仿宋"}
+  #PhotographicMemory_1 img{width:260px;height:100px;margin-left:140px;}
+  
+  #PhotographicMemory table{ border-collapse: collapse; width:700px; margin-top:-16px;}
+  #PhotographicMemory table, th ,td{ line-height:28px;text-align:center; font-size:14px;margin-top:-30px;height:23px;}
+  #PhotographicMemory input[type=text]{ width:104px;height:28px;margin:2px 6px 1px 7px; padding:0 5px 0 5px}
+  #PhotographicMemory select
+  {
+    width:120px;
+    font-size: 14px;
+    margin: 4px 0 4px 0; 
+    height:32px;
+    border: 1px solid #98C2E2;
+    background-color: White;}
+    
+    /*IADL*/
+    #IADL  div.contentbox{ width:600px; height:300px;}
+    #IADL  table{border-collapse: collapse; width:700px; margin-top:-16px;}
+    #IADL  td{ line-height:33px;height:73px;font-family:"微软雅黑"; }
+  
+     /*Montreal蒙特利尔*/
+    p.parttitle span{ font-size:16px; font-family:"微软雅黑"; font-style:oblique;}
+    div.guideline a{ font-size:18px; font-family:"微软雅黑" }
+    div.guideline p{  text-indent:2em; font-size:16px; margin:0px 3px 18px 3px;font-family:"微软雅黑"}
+    div.grade p{ text-indent:2em; font-size:16px; font-family:"仿宋"; margin:3px 3px 0px 3px;  }
+    div.photo{ width:244px;height:244px;margin-left:30px;float:left;font-family:"仿宋"}
+    div.photo img{ width:244px;height:244px;}
+    div.grade p span{ font-style:oblique; color:Blue;}
+    div.gradebox{display:block;border:2px solid ; border-color:White; height:175px; width:400px;margin-left:150px; }
+    div.gradebox input[type="checkbox"]{zoom:105%;}
+    /*以上是公用部分*/
+    #mtl0 div.grade{width:400px;height:200px;float:left;}  
+    #mtl0 div.gradebox { display:block;border:2px solid ; border-color:White; height:95px; width:344px; margin:207px 310px;}
+    #mtl0 div.gradebox a { float:right; margin-top:26px; font-size:26px;font-family:"微软雅黑"}
+    #mtl0 div.gradebox input[type="checkbox"]{ float:right; line-height:88px; margin-left:79px; width:24px; height:24px; }
+    #mtl1 div.grade ul{float: left;display: block;height: 100px;width: 660px;}
+    
+    #mtl1 div.grade{width:600px;height:165px;float:left;}
+    #mtl1 div.grade li{ font-size: 18px;line-height: 25px;position: relative;margin-left:78px;margin-right:23px;font-family:"仿宋"}
+    #mtl1 div.gradebox{ display:block;border:2px solid ; border-color:White; height:92px; width:300px; margin:247px 326px;}
+    #mtl1 div.photo{ width:244px;height:244px;margin-left:30px;float:left}
+    #mtl1 div.photo img{ width:235px;height:235px;}
+    #mtl1 div.gradebox input[type="checkbox"]{ float:right; line-height:88px; margin-top:0px;margin-left:41px; width:24px; height:24px; }
+    #mtl1 div.gradebox a{margin-top:33px;font-size:24px;float:right;margin-right:-50px;font-family:"微软雅黑"}
+    
+    #mtl2 div.grade ul{ float: left;display: block;height: 100px;width: 750px;}
+    #mtl2 div.grade li{ font-size: 16px;line-height: 25px; width:567px;position:relative;margin-left:78px;margin-right:23px;font-family:"仿宋"}
+    #mtl2 div.gradebox{margin-top:150px;margin-left:150px;height:133px;}
+    #mtl2 div.gradebox ul{float: left;display: block;height: 100px;width: 300px}
+    #mtl2 div.gradebox li{font-size: 18px;line-height: 25px;position: relative;margin-left:78px;margin-right:23px;width:280px; margin-top:12px; list-style:none;font-family:"微软雅黑"}
+   
+    #mtl3 div.grade ul{ float: left;display: block;height: 100px;width: 750px;}
+    #mtl3 div.grade li{ font-size: 16px;line-height: 25px; width:567px;position:relative;margin-left:40px;margin-right:23px;font-family:"仿宋"}
+    #mtl3 div.grade img{ width:647px;height:150px;}
+    #mtl3 div.gradebox{margin-top:10px;margin-left:150px;height:133px;}
+    #mtl3 div.gradebox ul{float: left;display: block;height: 100px;width: 300px}
+    #mtl3 div.gradebox li{ list-style:none;font-size: 18px;line-height: 25px;position: relative;margin-left:35px;margin-right:23px;width:376px; margin-top:12px;font-family:"微软雅黑"}
+    
+    
+    #mtl4 div.guideline a { font-size:19px;font-family:"微软雅黑"}
+    #mtl4 div.gradebox{margin-top:46px;height:100px;}
+    #mtl4 div.gradebox li{list-style:none;font-size: 18px;line-height: 25px;position: relative;margin-left:35px;margin-right:23px;width:376px; margin-top:15px;font-family:"微软雅黑"}
+    #mtl5 div.gradebox{width:569px;height:65px;margin:40px 59px;}
+    #mtl5 div.gradebox p{margin-top:20px;}
+    #mtl5 div.gradebox p span{ font-family:"微软雅黑"; font-style:normal;color:Black;margin-left:42px;}
+    #mtl6 div.gradebox{height:133px;margin-top:40px;}
+    #mtl6 div.gradebox li{list-style:none;font-size: 18px;line-height: 25px;position: relative;margin-left:48px;margin-right:23px;width:330px; margin-top:12px;font-family:"微软雅黑"}
+    /*辅助诊断*/
+    #AuxiliaryDiagnosis{margin-top:0px;}
+    #AuxiliaryDiagnosis .k{height:750px;width:788px;}
+    div.resultlayout{ width:100%;height:44%;float:left;margin-right:16px;}
+    div.resultlayout p{margin:25px 10px -18px 43px; font-family:"楷体";font-size:22px;}
+    
+    div.sysDiagnosis{ width:80%;float:left;margin-left:45px;}
+    div.docDiagnosis{width:80%;float:left;margin-left:45px;}
+    div.resultlayout input[type="text"]{ width:60px;margin:15px 5px 1px 1px;border:0;background:transparent;}
+    div.resultlayout ul{ list-style:none;font-family:"微软雅黑" }
+    div.resultlayout li{ float:left; width:238px; margin:0 0 0 3px;}
+    div.resultlayout li.scoreLayout{ float:left;width:272px;margin:0 0 0 0px;  }
+    div.sysDiagnosis textarea{  width:692px;margin:0px 5px 1px 1px;border:0;background:transparent;font-family:"微软雅黑";}
+    div.sysDiagnosis p{ font-family:"楷体";font-size:22px;}
+    div.docDiagnosis p{font-family:"楷体";font-size:22px;}
+    div.docDiagnosis textarea{font-family:"微软雅黑";}
+    input[type="submit"]
+    {
+       margin:9px 69px 0 603px; height: 37px;
+	   float: left;
+	   width  :138px;
+       background: url(images/normal-button.png) no-repeat ;
+       text-align:center;
+       border:0;}
+     input[type="submit"]:hover
+     {
+     background: url(images/hover-button.png) no-repeat ;
+     }
+     input[type="submit"]:active
+     {
+     background: url(images/click-button.png) no-repeat ;
+      }
+    #save 
+    {
+        margin:9px 69px 0 603px; 
+        height: 37px;
+	    float: left;
+	    width :138px;
+        background: url(images/normal-button.png) no-repeat ;
+        text-align:center;
+        border:0;}
+     #save:hover{background: url(images/hover-button.png) no-repeat ;}
+     #save:active{background: url(images/click-button.png) no-repeat ;}
+    div.step{ width:150px;height:75px;}
+    div.step img{width:350px;height:86px;margin-left:-99px;}
+    #mainmenu div.menubox li.lasttime_score{ list-style:none; float:right;font-size:16px; font-family:"仿宋";margin-top:-20px;margin-right:45px;}

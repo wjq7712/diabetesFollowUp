@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4239DDC6-0A93-473E-9962-AD8017BF381E}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FollowUp</RootNamespace>
+    <AssemblyName>FollowUp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\SQLservice.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\app.css" />
+    <Content Include="Content\images\1.png" />
+    <Content Include="Content\images\2.png" />
+    <Content Include="Content\images\3.png" />
+    <Content Include="Content\images\arrows.png" />
+    <Content Include="Content\images\bg2.png" />
+    <Content Include="Content\images\bg_1.jpg" />
+    <Content Include="Content\images\bg_2.jpg" />
+    <Content Include="Content\images\bg_3.jpg" />
+    <Content Include="Content\images\box1.png" />
+    <Content Include="Content\images\box2.png" />
+    <Content Include="Content\images\box3.png" />
+    <Content Include="Content\images\calendar.png" />
+    <Content Include="Content\images\circle-blue.png" />
+    <Content Include="Content\images\circle-orange.png" />
+    <Content Include="Content\images\click-button.png" />
+    <Content Include="Content\images\Content.png" />
+    <Content Include="Content\images\Content2.png" />
+    <Content Include="Content\images\dropdown.png" />
+    <Content Include="Content\images\foot-2.png" />
+    <Content Include="Content\images\foot.png" />
+    <Content Include="Content\images\head.png" />
+    <Content Include="Content\images\header.png" />
+    <Content Include="Content\images\hover-button.png" />
+    <Content Include="Content\images\login\content.gif" />
+    <Content Include="Content\images\login\footer.gif" />
+    <Content Include="Content\images\login\head.gif" />
+    <Content Include="Content\images\login\login.png" />
+    <Content Include="Content\images\lrgimg2.jpg" />
+    <Content Include="Content\images\lrgimg4.jpg" />
+    <Content Include="Content\images\lrgimg5.jpg" />
+    <Content Include="Content\images\lrgimg6.jpg" />
+    <Content Include="Content\images\main_bg.png" />
+    <Content Include="Content\images\menu_bg.png" />
+    <Content Include="Content\images\nav.png" />
+    <Content Include="Content\images\normal-button.png" />
+    <Content Include="Content\images\ocx_bg.png" />
+    <Content Include="Content\images\part1.png" />
+    <Content Include="Content\images\part2.png" />
+    <Content Include="Content\images\part3.png" />
+    <Content Include="Content\images\part4.png" />
+    <Content Include="Content\images\sidebar.png" />
+    <Content Include="Content\images\split.png" />
+    <Content Include="Content\images\tabs_icons.png" />
+    <Content Include="Content\images\title1-1.png" />
+    <Content Include="Content\images\title1-4.png" />
+    <Content Include="Content\images\title1.png" />
+    <Content Include="Content\images\title2-2.png" />
+    <Content Include="Content\images\title2-4.png" />
+    <Content Include="Content\images\title2.png" />
+    <Content Include="Content\images\title3-3.png" />
+    <Content Include="Content\images\title3-4.png" />
+    <Content Include="Content\images\title3.png" />
+    <Content Include="Content\images\triangle.png" />
+    <Content Include="Content\images\wait.gif" />
+    <Content Include="Content\images\wbox\close.png" />
+    <Content Include="Content\images\wbox\close0.png" />
+    <Content Include="Content\images\wbox\loading.gif" />
+    <Content Include="Content\images\wbox\titleBG.png" />
+    <Content Include="Content\images\wbox\titleBG0.png" />
+    <Content Include="Content\images\wbox\titleBG1.png" />
+    <Content Include="Content\images\wbox\wbox.gif" />
+    <Content Include="Content\images\wbox\wbox.png" />
+    <Content Include="Content\images\wbox\wbox2.gif" />
+    <Content Include="Content\images\命名.PNG" />
+    <Content Include="Content\images\图形记忆.png" />
+    <Content Include="Content\images\彩色连线.png" />
+    <Content Include="Content\images\未标题-1_13.png" />
+    <Content Include="Content\images\未标题-1_15.png" />
+    <Content Include="Content\images\未标题-1_16.png" />
+    <Content Include="Content\images\未标题-1_18.png" />
+    <Content Include="Content\images\立方体.gif" />
+    <Content Include="Content\images\立方体彩色.PNG" />
+    <Content Include="Content\images\连线彩色.PNG" />
+    <Content Include="Content\question_menu.css" />
+    <Content Include="Content\template-list-tree.css" />
+    <Content Include="Content\img\archetype\action.png" />
+    <Content Include="Content\img\archetype\admin.png" />
+    <Content Include="Content\img\archetype\cluster.png" />
+    <Content Include="Content\img\archetype\evaluation.png" />
+    <Content Include="Content\img\archetype\instruction.png" />
+    <Content Include="Content\img\archetype\observation.png" />
+    <Content Include="Content\img\archetype\section.png" />
+    <Content Include="Content\img\arrow_collapsed_white.png" />
+    <Content Include="Content\img\arrow_expanded.png" />
+    <Content Include="Content\img\collapse_all.gif" />
+    <Content Include="Content\img\datatype\action.png" />
+    <Content Include="Content\img\datatype\activity.png" />
+    <Content Include="Content\img\datatype\address.png" />
+    <Content Include="Content\img\datatype\admin.png" />
+    <Content Include="Content\img\datatype\agent.png" />
+    <Content Include="Content\img\datatype\any.png" />
+    <Content Include="Content\img\datatype\boolean.png" />
+    <Content Include="Content\img\datatype\capability.png" />
+    <Content Include="Content\img\datatype\choice.png" />
+    <Content Include="Content\img\datatype\cluster.png" />
+    <Content Include="Content\img\datatype\composition.png" />
+    <Content Include="Content\img\datatype\contact.png" />
+    <Content Include="Content\img\datatype\count.png" />
+    <Content Include="Content\img\datatype\datetime.png" />
+    <Content Include="Content\img\datatype\demographic.png" />
+    <Content Include="Content\img\datatype\duration.png" />
+    <Content Include="Content\img\datatype\element.png" />
+    <Content Include="Content\img\datatype\evaluation.png" />
+    <Content Include="Content\img\datatype\group.png" />
+    <Content Include="Content\img\datatype\history.png" />
+    <Content Include="Content\img\datatype\id.png" />
+    <Content Include="Content\img\datatype\instruction.png" />
+    <Content Include="Content\img\datatype\internalRef.png" />
+    <Content Include="Content\img\datatype\interval.png" />
+    <Content Include="Content\img\datatype\interval_count.png" />
+    <Content Include="Content\img\datatype\interval_datetime.png" />
+    <Content Include="Content\img\datatype\interval_quantity.png" />
+    <Content Include="Content\img\datatype\multimedia.png" />
+    <Content Include="Content\img\datatype\multiple.png" />
+    <Content Include="Content\img\datatype\observation.png" />
+    <Content Include="Content\img\datatype\ordinal.png" />
+    <Content Include="Content\img\datatype\organisation.png" />
+    <Content Include="Content\img\datatype\parsable.png" />
+    <Content Include="Content\img\datatype\participation.png" />
+    <Content Include="Content\img\datatype\partyIdentity.png" />
+    <Content Include="Content\img\datatype\partyRef.png" />
+    <Content Include="Content\img\datatype\partyRelationship.png" />
+    <Content Include="Content\img\datatype\pointintime.png" />
+    <Content Include="Content\img\datatype\quantity.png" />
+    <Content Include="Content\img\datatype\ratio.png" />
+    <Content Include="Content\img\datatype\role.png" />
+    <Content Include="Content\img\datatype\section.png" />
+    <Content Include="Content\img\datatype\slot.png" />
+    <Content Include="Content\img\datatype\slot_cluster.png" />
+    <Content Include="Content\img\datatype\slot_element.png" />
+    <Content Include="Content\img\datatype\structure.png" />
+    <Content Include="Content\img\datatype\text.png" />
+    <Content Include="Content\img\datatype\timing.png" />
+    <Content Include="Content\img\datatype\transition.png" />
+    <Content Include="Content\img\datatype\truefalse.png" />
+    <Content Include="Content\img\datatype\uri.png" />
+    <Content Include="Content\img\draft.png" />
+    <Content Include="Content\img\en.png" />
+    <Content Include="Content\img\expand_all.gif" />
+    <Content Include="Content\img\info.png" />
+    <Content Include="Content\img\letter-a-icon.png" />
+    <Content Include="Content\img\letter-A-violet-icon.png" />
+    <Content Include="Content\img\letter-M-gold-icon.png" />
+    <Content Include="Content\img\letter-m-icon.png" />
+    <Content Include="Content\img\letter-M-violet-icon.png" />
+    <Content Include="Content\img\letter-T-gold-icon.png" />
+    <Content Include="Content\img\loading.gif" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\published.png" />
+    <Content Include="Content\img\teamreview.png" />
+    <Content Include="Content\img\toolbox\button.png" />
+    <Content Include="Content\img\toolbox\label.png" />
+    <Content Include="Content\img\zh.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\bootstrap\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\bootstrap.css" />
+    <Content Include="Content\bootstrap\bootstrap.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\boostrap\affix.js" />
+    <Content Include="Scripts\boostrap\alert.js" />
+    <Content Include="Scripts\boostrap\button.js" />
+    <Content Include="Scripts\boostrap\carousel.js" />
+    <Content Include="Scripts\boostrap\collapse.js" />
+    <Content Include="Scripts\boostrap\dropdown.js" />
+    <Content Include="Scripts\boostrap\modal.js" />
+    <Content Include="Scripts\boostrap\popover.js" />
+    <Content Include="Scripts\boostrap\scrollspy.js" />
+    <Content Include="Scripts\boostrap\tab.js" />
+    <Content Include="Scripts\boostrap\tooltip.js" />
+    <Content Include="Scripts\boostrap\transition.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.11.3.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Scripts\question_menu.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\themes\base\images\boostrap-img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\bootstrap\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap\bootstrap.css.map" />
+    <Content Include="Views\Shared\_mmsePartial.cshtml" />
+    <Content Include="Views\Shared\_firstVisit.cshtml" />
+    <Content Include="Views\Shared\patientList.cshtml" />
+    <Content Include="Views\Shared\Mini.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2846</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
